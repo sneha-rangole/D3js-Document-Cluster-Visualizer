@@ -78,3 +78,10 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 ---
 
 This README provides an overview of the frontend setup and usage for the Document Clustering and Visualization project. For any questions or further assistance, please refer to the project's documentation or contact the maintainers.
+
+## Output:
+![image](https://github.com/user-attachments/assets/dc8147bb-8058-46c8-901e-a6cca38a7445)
+![image](https://github.com/user-attachments/assets/f49a0916-9bf0-4d96-b179-0c290fa34e27)
+![image](https://github.com/user-attachments/assets/4ede3e46-a597-4c2d-bea0-b6995d4b29db)
+
+
