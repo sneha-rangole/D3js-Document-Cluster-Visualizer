@@ -1,0 +1,68 @@
+.document-viewer {
+  display: flex;
+}
+
+.document-id-container {
+  width: 250px;
+  flex: 0 0 auto; 
+  overflow-y: auto;
+  max-height: calc(100vh - 10px);
+}
+
+.document-id-list{
+  list-style: none;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #ccc;
+}
+
+.document-content-container {
+  width: 50%;
+  overflow-y: auto;
+  max-height: calc(100vh - 10px);
+}
+
+.title {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1; 
+}
+
+.mds-plot{
+  width: 50%;
+}
+
+.file-name{
+  margin-left: 5px;
+}
+
+.id-list-item{
+  margin-bottom: 5px;
+}
+
+.file-content-box {
+  overflow-x: auto;
+}
+
+.file-content {
+  white-space: pre-wrap;
+}
+
+.file-content-title{
+  text-align: center;
+}
+
+.content-wrapper {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border: 1px solid;
+  cursor: grab;
+  user-select: none;
+}

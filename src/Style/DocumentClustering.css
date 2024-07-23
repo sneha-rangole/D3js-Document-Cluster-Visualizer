@@ -1,0 +1,36 @@
+.clusters-and-content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; 
+}
+
+#cluster-container, .document-content {
+    flex: 1; 
+    height: 80vh;
+    overflow: hidden; 
+}
+
+.document-content {
+    overflow-y: auto;
+}
+  
+#tooltip {
+    position: absolute;
+    text-align: left;
+    width: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 8px;
+    pointer-events: none; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cluster-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    fill: #333;
+    pointer-events: none; /* Prevent labels from interfering with mouse events */
+}

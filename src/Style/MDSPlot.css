@@ -1,0 +1,11 @@
+.mds_plot{
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1; 
+  }

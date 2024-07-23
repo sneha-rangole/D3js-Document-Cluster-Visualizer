@@ -1,0 +1,30 @@
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* Base button styles */
+  button {
+    background-color: #3498db; /* Blue color */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Medium size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Reduced border radius */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  button:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+  }
