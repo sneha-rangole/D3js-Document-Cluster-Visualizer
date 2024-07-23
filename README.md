@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+### README for Frontend (visualAnalyticsProject)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Document Clustering and Visualization Frontend
 
-In the project directory, you can run:
+This frontend application is part of the Document Clustering and Visualization project. It provides an interactive user interface for clustering documents and visualizing the results.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Node.js** (v12 or later)
+- **npm** (v6 or later)
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/your-username/document-clustering-visualization.git
+    cd document-clustering-visualization/visualAnalyticsProject
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+1. **Start the frontend application:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    The application will start on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **src/components/**
+  - **DocumentClustering.js:** React component responsible for clustering documents based on their content. Utilizes D3.js for data visualization. Fetches data from the backend API endpoints `/api/extractEntities` and `/api/clusterDocuments`.
+  - **MDSPlot.js:** React component responsible for visualizing the results of the Multidimensional Scaling (MDS) analysis. Utilizes Plotly.js for dynamic and interactive visualization. Fetches MDS data from the backend API endpoint `/api/mds`.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Document Clustering Component (`DocumentClustering.js`)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Fetches document data from backend APIs and visualizes clustering results.
+- Uses D3.js for creating interactive visualizations of document clusters.
 
-### Code Splitting
+### MDS Visualization Component (`MDSPlot.js`)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Displays results of MDS analysis to show document similarity in a reduced-dimensional space.
+- Uses Plotly.js for interactive and dynamic visualizations.
+- Supports hovering and clicking interactions:
+  - **Hovering Interactions:** Highlights the corresponding document ID in the list when hovering over a node in the MDS plot.
+  - **Click Interactions:** Opens the corresponding document in the workspace when clicking on a node in the plot.
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **React.js:** JavaScript library for building user interfaces.
+- **D3.js:** JavaScript library for manipulating documents based on data, used for data visualization.
+- **Plotly.js:** JavaScript library for creating dynamic and interactive visualizations.
+- **Axios:** Promise-based HTTP client for making requests to the backend API endpoints.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Thanks to the contributors and the open-source community for their valuable tools and libraries.
+- Special thanks to the team members and collaborators for their efforts and support.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README provides an overview of the frontend setup and usage for the Document Clustering and Visualization project. For any questions or further assistance, please refer to the project's documentation or contact the maintainers.
