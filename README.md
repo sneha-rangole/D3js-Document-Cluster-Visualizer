@@ -1,4 +1,4 @@
-### README for Frontend (visualAnalyticsProject)
+### README for Frontend (BreadcrumbsD3js-Document-Cluster-Visualizer)
 
 ---
 
