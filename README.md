@@ -1,6 +1,3 @@
-### README for Frontend (BreadcrumbsD3js-Document-Cluster-Visualizer)
-
----
 
 # Document Clustering and Visualization Frontend
 
